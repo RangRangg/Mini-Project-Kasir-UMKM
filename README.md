@@ -52,18 +52,15 @@ Aplikasi ini digunakan untuk mengelola data barang, melakukan transaksi penjuala
 MINI_PROJECT_ALPRO/
 ├── data/
 │   ├── barang.json
-│   └── riwayat_transaksi.csv
+│   └── transaksi.csv
 │
 ├── docs/
 │   ├── flowchart.png
 │   └── laporan.docx
 │
-├── web/
-│   └── index.html
-│
 ├── application.py
-├── README.md
-└── vercel.json
+└── README.md
+ 
 
 ---
 
