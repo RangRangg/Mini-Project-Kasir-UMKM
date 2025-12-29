@@ -1,0 +1,14 @@
+[
+  {
+    "kode": "THM2025",
+    "nama": "tumbler",
+    "harga": 150000.0,
+    "stok": 80
+  },
+  {
+    "kode": "WLKN58",
+    "nama": "welkin",
+    "harga": 58000.0,
+    "stok": 30
+  }
+]
