@@ -8,3 +8,5 @@ Aplikasi kasir berbasis Python (CLI) untuk mengelola:
 ## Cara Menjalankan
 ```bash
 py application.py
+# Mini-Project-Kasir-UMKM
+CLI Python, Vercel
