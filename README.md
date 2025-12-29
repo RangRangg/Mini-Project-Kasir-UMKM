@@ -45,7 +45,6 @@ Aplikasi ini digunakan untuk mengelola data barang, melakukan transaksi penjuala
   - CSV → riwayat transaksi
 - **Debugging & Testing**: pengujian input, stok, dan transaksi
 
----
 
 ## 📁 Struktur Folder
 
@@ -66,8 +65,6 @@ MINI_PROJECT_ALPRO/
 ├── README.md
 └── vercel.json
 
-
----
 
 ## ▶️ Cara Menjalankan Program
 
