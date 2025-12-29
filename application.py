@@ -198,16 +198,29 @@ def tampil_riwayat_transaksi():
 
 def rekap_total_pendapatan():
     init_transaksi_file_if_needed()
-    total = 0
-    ids = set()
+
+    transaksi_unik = {}  # key: id_transaksi, value: total_transaksi
+
     with open(TRANSAKSI_FILE, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
-        for r in reader:
-            ids.add(r["id_transaksi"])
-            total += float(r["total_transaksi"])
-    print("\n=== REKAP ===")
-    print("Jumlah transaksi:", len(ids))
-    print("Total pendapatan: Rp", format_rupiah(total))
+        for row in reader:
+            trx_id = row["id_transaksi"]
+            total = float(row["total_transaksi"])
+
+            # simpan hanya 1 kali per transaksi
+            transaksi_unik[trx_id] = total
+
+    if not transaksi_unik:
+        print("\n[!] Belum ada transaksi.\n")
+        return
+
+    total_pendapatan = sum(transaksi_unik.values())
+    jumlah_transaksi = len(transaksi_unik)
+
+    print("\n=== REKAP PENDAPATAN ===")
+    print(f"Jumlah transaksi : {jumlah_transaksi}")
+    print(f"Total pendapatan : Rp{format_rupiah(total_pendapatan)}\n")
+
 
 # =========================
 # MENU

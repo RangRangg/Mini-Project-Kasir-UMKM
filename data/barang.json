@@ -9,6 +9,12 @@
     "kode": "WLKN58",
     "nama": "welkin",
     "harga": 58000.0,
-    "stok": 30
+    "stok": 15
+  },
+  {
+    "kode": "PDH2025",
+    "nama": "Workshirt",
+    "harga": 150000.0,
+    "stok": 200
   }
 ]
