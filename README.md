@@ -49,15 +49,19 @@ Aplikasi ini digunakan untuk mengelola data barang, melakukan transaksi penjuala
 
 ## 📁 Struktur Folder
 
+```text
 MINI_PROJECT_ALPRO/
 ├── data/
 │   ├── barang.json
 │   └── riwayat_transaksi.csv
+│
 ├── docs/
 │   ├── flowchart.png
 │   └── laporan.docx
+│
 ├── web/
 │   └── index.html
+│
 ├── application.py
 ├── README.md
 └── vercel.json
